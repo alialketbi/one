@@ -1,0 +1,20 @@
+/* CSS Document */
+
+.jp-audio { background:#333; margin:0px; padding-bottom:10px; direction:ltr;
+position:absolute; bottom:0; left:0; right:0; max-height:100px; width:100%;}
+
+.jp-play { float:left; margin-left:20px; position:absolute; left:0; }
+.jp-pause {float:left; margin-left:20px; }
+.jp-stop {margin:20px; }
+
+.jp-repeat { float: right; margin-right:20px; }
+.jp-repeat-off { float: right; margin-right:20px; }
+
+.jp-progress {max-height:30px; position: relative; margin-bottom:10px; color:#999; }
+.jp-seek-bar {background:#666; max-height:30px;  width: auto; }
+.jp-play-bar {background: #E3E824; max-height:30px; line-height:30px; width: auto; }
+
+.jp-current-time , .jp-duration { position: absolute; top:0;}
+.jp-current-time { left:10px; }
+ .jp-duration { right:10px; }
+

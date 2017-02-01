@@ -1,0 +1,76 @@
+/* CSS Document */
+
+body { direction:rtl; background:#E0E0E0;}
+
+ .header { height:60px; line-height:60px; background:#689F38; text-align:center; font-size:140%; font-family:tahoma; color:#FFF; border-bottom:3px solid #558B2F;}
+
+.wrapper .list { background:#FFFFFF; margin-bottom:90px; }
+
+.wrapper .list a { text-decoration:none; color:#333; font-size: larger;  }
+
+.wrapper .list li { border-bottom:1px solid #e9e9e9; padding:15px; padding-right:20px;}
+.wrapper .list li.current {  color: #FFF; background:#29B6F6;  }
+
+.wrapper .list span.time { background: #29B6F6; float:left; color:#FFF; font-size:small; border-radius:20px; padding:5px; padding-left:10px; padding-right:10px; height:10px; line-height:10px; }
+
+.wrapper .list span.current { background: #FFF; color:#29B6F6; }
+
+.fixed { position:fixed;}
+/* Player */
+
+.jp-audio { background:#333; direction:ltr; text-align:center;
+position: fixed; bottom:0; left:0; right:0; max-height:80px;}
+.jp-audio img {}
+
+.jp-audio a {}
+
+.jp-play { margin-left:20px; position: absolute; left:0; top:50%; max-width:30px; }
+.jp-pause { margin-left:20px;  position: absolute; left:0; top:50%; max-width:30px;}
+.jp-stop { position:absolute;  top:50%; max-width:30px;}
+
+.jp-repeat {  margin-right:20px;  position: absolute; right:0; top:50%; max-width:30px;}
+.jp-repeat-off { margin-right:20px;position: absolute; right:0; top:50%; max-width:30px; }
+
+.jp-progress {max-height:30px; position: relative; color:#999; }
+.jp-seek-bar {background:#666; max-height:30px; }
+.jp-play-bar {background: #E3E824; max-height:30px; line-height:30px;}
+
+.jp-current-time , .jp-duration { position: absolute; top:0;}
+.jp-current-time { left:10px; }
+ .jp-duration { right:10px; }
+
+
+
+/* owl  */
+body, html {
+		height: 100%;
+}
+
+.owl-carousel {
+	height: 100%;
+}
+div:not(.wrapper){
+		height: 100%;
+	}
+	
+.owl-slide { height: 100%;
+ }
+.owl-slide[data-hash="3"] {
+}
+
+/* About READER  */
+.avatar {
+height:120px;
+ width:120px;
+  margin:0 auto;  
+ }
+.avatar img{ border-radius:100px; margin-top:10px; border:2px solid #EBEBEB;
+ height:120px; width:120px;
+ }
+
+ .about {padding:20px; width:80%; margin:0 auto; background: #EBEBEB; text-align: right ; font-size:90%; line-height:1.2em; font-family:tahoma; color:#333; margin-top:10px; border:1px dashed #999;}
+
+/* About me  */
+
+.aboutme { background: #EBEBEB; color: #666; text-align:center; font-size:120%;
+ width:100%; padding-top:20px; }
