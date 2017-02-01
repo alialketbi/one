@@ -1,0 +1,236 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0,  shrink-to-fit=no">
+
+<title>Untitled Document</title>
+
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script src="js/jquery.jplayer.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+
+	// player
+	
+	  $("#jquery_jplayer").jPlayer({
+        ready: function () {
+          $(this).jPlayer("setMedia", {
+            mp3: 'mp3/001.mp3' ,
+          });
+        },
+
+        ended: function (event) {
+			
+			if (event.jPlayer.options.loop) {
+				//repeat
+					$("#jquery_jplayer").jPlayer("play");
+					
+				} else {
+					
+					//'not repeat
+			var mymp3 = $(".list a.current").next().attr('link').valueOf();
+			$("#list a li").removeClass("current");	
+			$("#list a li span").removeClass("current");	
+
+			$(".list a.current").next().find("li").addClass("current");
+				$(".list li.current").find("span").addClass("current");
+		
+		  $("#jquery_jplayer").jPlayer("setMedia", {
+				mp3: mymp3,
+			});
+		
+		$("#jquery_jplayer").jPlayer("play");
+
+  			}
+			
+			
+        },
+        cssSelectorAncestor: "#jp_container_1",
+        swfPath: "/js/jquery.jplayer.swf",
+        supplied: "m4a, mp3",
+        autoBlur: false,
+        smoothPlayBar: true,
+        keyEnabled: true,
+		remainingDuration : true,
+			errorAlerts:true,
+
+		
+      });
+
+	$("#list a").click( function() {
+			$(this).addClass("current");	
+		
+			$("#list a li").removeClass("current");	
+			$(this).find("li").addClass("current");	
+			
+			$("#list a li span").removeClass("current");	
+			$(this).find("li span").addClass("current");
+				
+			var mp3link = $( this ).attr('link').valueOf();
+	
+			  $("#jquery_jplayer").jPlayer("setMedia", {
+					mp3: mp3link,
+				});
+			
+			$("#jquery_jplayer").jPlayer("play");
+				
+	});
+	
+});
+
+</script>
+</head>
+
+<body>
+
+<div class="owl-carousel">
+
+         
+  <div class="owl-slide" data-hash="1">
+  	<div class="wrapper">
+        <div class="header">معلومات عن القارئ</div>
+    
+        <div class="avatar"><img src="ahmed.jpg" alt=""></div>
+        
+        <div class="about">
+            <span><strong style="font-weight:bold;">نسبه وحياته الشخصية </strong>هو الشيخ أحمد بن علي بن محمد آل سليمان العجمي . ولد أحمد العجمي في (24 فبراير 1968) في مدينة الخبر في السعودية. الشيخ أحمد متزوج وله ستة أبناء وهم عبد الله، عمر، فاطمة، مريم، موضي، عبد الرحمن.</span><br>
+            <span><strong style="font-weight:bold;">تعليمه ودرجاته</strong>
+            درس المرحلة الابتدائية في مدرسة المحمدية بالخبر الجنوبي..
+درس المرحلة المتوسطة في متوسطة الزبير ابن العوام بالخبر الجنوبية.
+درس المرحلة الثانوية في ثانوية الخبر بالخبر (مدينة العمال).
+عام 1412هـ، حصل على شهادة البكالوريوس من قسم الشريعة في جامعة الإمام محمد بن سعود الإسلامية بمحافظة الأحساء في المنطقة الشرقية.
+حصل على درجة الماجستير من جامعة لاهور الحكومية في باكستان.
+حصل على درجة الدكتوراة بتقدير ممتاز في التفسير في رسالة بعنوان (( منّة العلي القدير في شرح طرق التفسير )).</span>
+        </div>  
+
+	</div>
+  </div><!--END Slide 1 -->
+    
+  <div class="owl-slide" data-hash="2">
+  
+  <div class="wrapper">
+
+	<div class="header">القارئ أحمد بن علي العجمي</div>
+    
+<div class="list" id="list">
+<ol>
+    <a link="mp3/001.mp3">
+        <li>الفاتحة <span class="time">3:22</span> </li>
+    </a>
+    <a link="mp3/001.mp3">
+        <li>الفاتحة <span class="time">3:22</span> </li>
+    </a>
+    <a link="mp3/001.mp3">
+        <li>الفاتحة <span class="time">3:22</span> </li>
+    </a>
+    <a link="mp3/001.mp3">
+        <li>الفاتحة <span class="time">3:22</span> </li>
+    </a>
+    <a link="mp3/001.mp3">
+        <li>الفاتحة <span class="time">3:22</span> </li>
+    </a>
+    <a link="mp3/001.mp3">
+        <li>الفاتحة <span class="time">3:22</span> </li>
+    </a>
+    <a link="mp3/001.mp3">
+        <li>الفاتحة <span class="time">3:22</span> </li>
+    </a>
+    <a link="mp3/001.mp3">
+        <li>الفاتحة <span class="time">3:22</span> </li>
+    </a>
+    <a link="mp3/001.mp3">
+        <li>الفاتحة <span class="time">3:22</span> </li>
+    </a>
+    <a link="mp3/001.mp3">
+        <li>الفاتحة <span class="time">3:22</span> </li>
+    </a>
+    <a link="mp3/001.mp3">
+        <li>الفاتحة <span class="time">3:22</span> </li>
+    </a>
+    <a link="http://server10.mp3quran.net/ajm/128/002.mp3">
+        <li>11111 <span class="time">3:22</span> </li>
+    </a>
+    <a link="http://server10.mp3quran.net/ajm/128/003.mp3">
+        <li>11111 <span class="time">3:22</span> </li>
+    </a>
+</ol>
+
+	
+<div id="jquery_jplayer" class="jp-jplayer"></div>
+
+<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+     
+
+                  <div class="jp-progress">
+           <div class="jp-seek-bar">
+            <div class="jp-play-bar">
+                    <span class="jp-current-time" >&nbsp;</span>
+                   <span class="jp-duration">&nbsp;</span>
+            </div>
+          </div>
+        </div>
+  
+           <a class="jp-play">
+                <img src="icons/play-arrow.svg" height="30px" />
+          </a>
+          <a class="jp-pause">
+              <img src="icons/pause-button.svg" height="30px" />
+          </a>
+           <a class="jp-stop">
+           		<img src="icons/stop-button.svg" height="30px" />
+           </a>
+                    
+           <a class="jp-repeat"><img src="icons/repeat.svg" height="30px" ></a>
+          <a class="jp-repeat-off"><img src="icons/repeat-on.svg" height="30px" ></a>     
+        
+    <div class="jp-no-solution">
+      <span>Update Required</span>
+      To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+    </div>
+  
+  </div><!--END jp_container_1 -->
+</div>
+
+</div><!--END wrapper -->
+
+  
+  </div><!--END Slide 2 -->
+    
+  <div class="owl-slide" data-hash="3">
+  <div class="wrapper">
+  	<div class="aboutme">
+    
+    	<span>Alajmi</span><br>
+    	<span>Version 1.0</span>
+    
+    </div>
+  </div>
+  </div><!--END Slide 3 -->
+    
+</div>
+
+<script type="text/javascript">
+
+	$('.owl-carousel').owlCarousel({
+		rtl:true,
+		items:1,
+		loop:false,
+		URLhashListener:true,
+        startPosition: '1',
+	});   
+
+</script>
+
+
+
+</body>
+</html>
